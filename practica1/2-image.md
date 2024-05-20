@@ -4,6 +4,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
+-  Ambas permiten empaquetar todas las partes de una aplicación en un solo paquete o archivo único por defecto.
 # COMPLETAR 
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
