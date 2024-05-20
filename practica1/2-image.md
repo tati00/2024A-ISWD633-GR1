@@ -5,6 +5,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
 -  Ambas permiten empaquetar todas las partes de una aplicación en un solo paquete o archivo único.
+
 # COMPLETAR 
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
@@ -17,7 +18,7 @@ Descarga la última versión de la imagen disponible en el registro de Docker.
 docker pull <nombre imagen> 
 ```
 
-Descarga una versión específica de la imagen, cada imagen tiene etiquetas (tags) para diferentes versiones.
+Descarga una versión específica de la imagen, cada imagen tiene etiquetas (tags) para diferentes **versiones**.
 Una imagen puede tener la etiqueta latest para representar la última versión, si no se especifica una etiqueta se hará referencia a la versión latest.
 
 ```
@@ -25,12 +26,19 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+![Descargar imagen](imagenes/imagenHelloWorld.png)
+
 # COMPLETAR
 
 **¿Qué es nginx**
+- Es un servidor web/Proxy inverso ligero de alto rendimiento y un proxy para protocolos de correo electrónico.
+
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
+![Descargar imagen NGINX](imagenes/imagenNginx.png)
+
+
 # COMPLETAR
 
 ### Listar imágenes
@@ -40,6 +48,7 @@ docker images
 ```
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+![Listar imagenes](imagenes/imagenNginx.png)
 
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -53,9 +62,13 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
+![Inspeccionar imagen](imagenes/imagenInspeccionHW.png)
+
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+- Docker utiliza el algoritmo SHA-256 para generar el ID de la imagen.
+
 # COMPLETAR
 
 ### Filtrar imágenes
@@ -73,6 +86,8 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
+![Filtrar y eliminar imagen](imagenes/filtrarEliminar.png)
+
 # COMPLETAR
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
@@ -84,4 +99,6 @@ Es una buena práctica detener y eliminar todos los contenedores que dependan de
 ```
 docker rmi -f <nombre imagen>:<tag>
 ```
-
+```
+docker rmi -f hello-world:latest
+```
