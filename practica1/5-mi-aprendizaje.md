@@ -4,7 +4,7 @@ Experimente dos inconvenientes a lo largo de la práctica.
   ```
   docker create --name <nombre contenedor> <nombre imagen>:<tag>
   ```
-- En segunda instancia y dependiente del anterior, el comando para eliminar estableció una complejidad innecesaria para eliminar el contenedor al no tener un nombre especificado. Por lo cuál necesite el comando para **inspeccionar la imagen** y hallar su nombre.
+- En segunda instancia y dependiente del anterior, el comando para eliminar estableció una complejidad innecesaria para eliminar el contenedor al no tener un nombre especificado. Por lo cuál, necesite el comando para **inspeccionar la imagen** y hallar su nombre.
   ```
   docker rm <nombre contenedor>
   ```
