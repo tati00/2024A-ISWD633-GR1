@@ -55,10 +55,10 @@ docker stop <nombre contenedor>
 ```
 docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ```
-![Ecosistema de Docker](imagenes/dockerRun.PNG)
+![Ecosistema de Docker](imagenes/dockerRun.png)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
-![Crear y ejecutar un contenedor](capturas/crearEjecutarContenedor.PNG)
+![Crear y ejecutar un contenedor](capturas/crearEjecutarContenedor.png)
 
 # COMPLETAR
 
@@ -77,7 +77,7 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
 Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
-![Modo detach](capturas/modoDetach.PNG)
+![Modo detach](capturas/modoDetach.png)
 
 # COMPLETAR
 
@@ -87,12 +87,12 @@ Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando
 docker rm <nombre contenedor>
 ```
 Eliminar el contenedor que se creó a partir de la imagen hello-world 
-![Eliminar contenedor](capturas/eliminarContenedor.PNG)
+![Eliminar contenedor](capturas/eliminarContenedor.png)
 
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
-![Verificar eliminación](capturas/evidenciaEliminar.PNG)
+![Verificar eliminación](capturas/evidenciaEliminar.png)
 
 # COMPLETAR
 
@@ -102,18 +102,18 @@ Verificar que el contenedor que se eliminó
 docker rm -f <nombre contenedor>
 ```
 Eliminar el contenedor **srv-web3** 
-![Eliminar contenedor en ejecución](capturas/eliminarContenedorEjecutando.PNG)
+![Eliminar contenedor en ejecución](capturas/eliminarContenedorEjecutando.png)
 
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
-![Verificar eliminación](capturas/evidenciaContenedorEliminar.PNG)
+![Verificar eliminación](capturas/evidenciaContenedorEliminar.png)
 
 # COMPLETAR
 
 ### Para inspecionar un contenedor 
 
 Inspeccionar el contenedor **srv-web** 
-![Inspecionar un contenedor](capturas/inspeccionarContenedor.PNG)
+![Inspecionar un contenedor](capturas/inspeccionarContenedor.png)
 
 # COMPLETAR
