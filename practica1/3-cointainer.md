@@ -55,7 +55,7 @@ docker stop <nombre contenedor>
 ```
 docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ```
-![Ecosistema de Docker](capturas/dockerRun.PNG)
+![Ecosistema de Docker](imagenes/dockerRun.PNG)
 
 Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
 ![Crear y ejecutar un contenedor](capturas/crearEjecutarContenedor.PNG)
