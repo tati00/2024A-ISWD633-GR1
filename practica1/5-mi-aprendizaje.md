@@ -1,6 +1,6 @@
 # CONOCIMIENTOS E INCONVENIENTES 
 Experimente dos inconvenientes a lo largo de la práctica. 
-- En primera instancia, el comando para crear un contenedor sin nombre específico. Debido a que **omití únicamente el nombre del contenedor** lo que resultó en un error ``docker create" requires at least 1 argument.``.
+- En primera instancia, el comando para crear un contenedor sin nombre específico. Debido a que **omití únicamente el nombre del contenedor** lo que resultó en un error ``docker create" requires at least 1 argument``.
   ```
   docker create --name <nombre contenedor> <nombre imagen>:<tag>
   ```
