@@ -26,7 +26,7 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-![Descargar imagen](imagenes/imagenHelloWorld.png)
+![Descargar imagen](capturas/imagenHelloWorld.png)
 
 # COMPLETAR
 
@@ -36,7 +36,7 @@ Descargar la imagen **hello-world**
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
-![Descargar imagen NGINX](imagenes/imagenNginx.png)
+![Descargar imagen NGINX](capturas/imagenNginx.png)
 
 
 # COMPLETAR
@@ -48,7 +48,7 @@ docker images
 ```
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
-![Listar imagenes](imagenes/imagenNginx.png)
+![Listar imagenes](capturas/imagenNginx.png)
 
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -62,7 +62,7 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-![Inspeccionar imagen](imagenes/imagenInspeccionHW.png)
+![Inspeccionar imagen](capturas/imagenInspeccionHW.png)
 
 # COMPLETAR
 
@@ -86,7 +86,7 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-![Filtrar y eliminar imagen](imagenes/filtrarEliminar.png)
+![Filtrar y eliminar imagen](capturas/filtrarEliminar.png)
 
 # COMPLETAR
 
