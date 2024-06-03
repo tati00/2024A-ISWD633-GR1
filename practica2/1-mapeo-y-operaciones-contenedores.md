@@ -118,7 +118,6 @@ docker exec -it jenkins-container cat var/jenkins_home/secrets/initialAdminPassw
 
 
 ### Para ver los logs de un contenedor
-
 ```
 docker logs -n 100 jenkins
 ```
