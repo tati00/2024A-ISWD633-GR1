@@ -12,33 +12,46 @@ Las redes son un componente fundamental que permite la comunicación entre conte
 ```
 docker network create <nombre red> -d bridge
 ```
-
+```
+docker network create network-docker -d bridge
+```
 ### Crear un contenedor vinculado a una red
 
 ```
 docker run -d --name <nombre contenedor> --network <nombre red> <nombre imagen>
 ```
-
+```
+docker run -d --name nginx-container2 --network network-docker nginx:alpine
+```
 ### Para saber a qué red está conectado un contenedor
 
 ```
 docker inspect <nombre contenedor>
 ```
+```
+docker inspect nginx-container2
+```
 ó
 ```
 docker network inspect <nombre red> 
 ```
-
+```
+docker network inspect network-docker 
+```
 ### Vincular contenedor a una red
 ```
 docker network connect <nombre red> <nombre contenedor>
 ```
-
+```
+docker network connect network-docker nginx-container3 
+```
 ### Para desvincular un contenedor de una red
 ```
 docker network disconnect <nombre red> <nombre contenedor>
 ```
-
+```
+docker network disconnect network-docker nginx-container3
+```
 ### Para listar las redes existentes
 ```
 docker network ls
@@ -49,11 +62,16 @@ docker network ls
 ![Imagen](imagenes/esquema-ejercicio-redes.PNG)
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
-
+![Redes](capturas/redes.png)
 # COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
-
+![Redes y contenedores](capturas/redesContenedores.png)
 ### Para eliminar las redes creadas
 ```
 docker network rm <nombre de la red>
 ```
-
+```
+docker network rm net-curso01
+```
+```
+docker network rm net-curso02
+```
